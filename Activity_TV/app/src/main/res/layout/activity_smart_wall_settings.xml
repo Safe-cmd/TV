@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp"
+    tools:context=".SmartWallSettingsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="智慧墙"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内容设置"
+        android:textColor="@color/white_50_transparent"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/item_content_custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_selectable_background"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"
+        android:focusable="true"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="内容自定义"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_forward"
+            app:tint="@color/white"
+            android:contentDescription="Content custom settings" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_movie_hotspots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_selectable_background"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"
+        android:focusable="true"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="影视热点"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线推荐热门影片精彩剧照"
+            android:textColor="@color/white_50_transparent"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"/>
+        <Switch
+            android:id="@+id/switch_movie_hotspots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:focusable="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_beautiful_films"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_selectable_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:focusable="true"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="精美大片"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="在线更新新版精美大片"
+            android:textColor="@color/white_50_transparent"
+            android:textSize="14sp"
+            android:layout_marginEnd="8dp"/>
+        <Switch
+            android:id="@+id/switch_beautiful_films"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:focusable="true"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="等待时间"
+        android:textColor="@color/white_50_transparent"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_wait_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false">
+
+        <RadioButton
+            android:id="@+id/radio_wait_time_1min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1分钟"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/radio_background_selector"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:focusable="true"/>
+
+        <RadioButton
+            android:id="@+id/radio_wait_time_5min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5分钟"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/radio_background_selector"
+            android:padding="16dp"
+            android:checked="true"
+            android:layout_marginBottom="8dp"
+            android:focusable="true" />
+
+    </RadioGroup>
+
+</LinearLayout>

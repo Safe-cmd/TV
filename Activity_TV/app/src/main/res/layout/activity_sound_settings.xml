@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    tools:context=".SoundSettingsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="声音设置"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:id="@+id/make_call_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittext">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="拨打电话"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Switch
+            android:id="@+id/make_call_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/sound_effect_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="音效模式"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/radio_background_selector"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioButton
+            android:id="@+id/movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="电影"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/radio_background_selector"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioButton
+            android:id="@+id/music"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="音乐"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/radio_background_selector"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioButton
+            android:id="@+id/sports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="体育"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/radio_background_selector"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioButton
+            android:id="@+id/voice_settings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="语音设置"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/radio_background_selector"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <RadioButton
+            android:id="@+id/ai_synthesis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AI合成"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/radio_background_selector"
+            android:padding="16dp"
+            android:checked="true"
+            android:layout_marginBottom="8dp" />
+
+    </RadioGroup>
+</LinearLayout>

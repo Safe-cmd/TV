@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YourAppName</string>
+    <string name="settings_title">设置</string>
+    <string name="network_item">网络</string>
+    <string name="bluetooth_item">蓝牙</string>
+    <string name="projection_item">投影</string>
+    <string name="image_video_item">图像视频</string>
+    <string name="sound_item">声音</string>
+    <string name="system_item">系统</string>
+    <string name="signal_source_item">信号源</string>
+    <string name="smart_wall_item">智慧墙</string>
+    <string name="about_item">关于本机</string>
+    <string name="scanning_button">扫描中</string>
+    <string name="connected_devices">已连接设备</string>
+    <string name="known_device_example">已知设备 NL3FB9FE</string>
+    <string name="make_call_label">拨打电话</string>
+    <string name="sound_effect_mode_label">音效模式</string>
+    <string name="movie_mode">电影</string>
+    <string name="music_mode">音乐</string>
+    <string name="sports_mode">体育</string>
+    <string name="voice_settings_label">语音设置</string>
+    <string name="ai_synthesis_label">AI合成</string>
+</resources>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp"
+    tools:context=".SignalSourceSettingsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="信号源"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:id="@+id/item_hdmi1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_selectable_background"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"
+        android:focusable="true"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HDMI 1"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已连接"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_forward"
+            app:tint="@color/white"
+            android:contentDescription="HDMI 1 settings" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_hdmi2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_selectable_background"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp"
+        android:focusable="true"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HDMI 2"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未连接"
+            android:textColor="@color/white_50_transparent"
+            android:textSize="16sp"/>
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_forward"
+            app:tint="@color/white"
+            android:contentDescription="HDMI 2 settings" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_hdmi_plug_and_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_selectable_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:focusable="true"
+        android:fitsSystemWindows="true"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HDMI即插即用"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开机源"
+        android:textColor="@color/white_50_transparent"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_boot_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false">
+
+
+        <RadioButton
+            android:id="@+id/radio_boot_source_android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Android"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/edittext"  />
+
+        <RadioButton
+            android:id="@+id/radio_boot_source_hdmi1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HDMI 1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/edittext"  />
+
+
+        <RadioButton
+            android:id="@+id/radio_boot_source_hdmi2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HDMI 2"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/edittext"  />
+
+    </RadioGroup>
+
+</LinearLayout>

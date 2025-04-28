@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp"
+    tools:context=".SystemSettingsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统设置"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="主题切换"
+        android:textColor="@color/white_50_transparent"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false">
+
+        <RadioButton
+            android:id="@+id/radio_theme_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="浅色模式"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/radio_background_selector"
+            android:padding="16dp"
+            android:checked="true"
+            android:layout_marginBottom="8dp"
+            android:focusable="true" />
+
+        <RadioButton
+            android:id="@+id/radio_theme_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="深色模式"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/radio_background_selector"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:focusable="true" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开机方式"
+        android:textColor="@color/white_50_transparent"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_boot_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp"
+        android:focusableInTouchMode="true"
+        android:focusedByDefault="false">
+
+        <RadioButton
+            android:id="@+id/radio_boot_power_on"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上电开机"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/radio_background_selector"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"
+            android:focusable="true" />
+
+        <RadioButton
+            android:id="@+id/radio_boot_standby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="上电待机"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:background="@drawable/radio_background_selector"
+            android:padding="16dp"
+            android:checked="true"
+            android:layout_marginBottom="8dp"
+            android:focusable="true" />
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="系统版本"
+        android:textColor="@color/white_50_transparent"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+    <LinearLayout
+        android:id="@+id/item_system_upgrade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/item_selectable_background"  /> <!-- 使用可选择背景 -->
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="系统升级"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_arrow_forward"
+        app:tint="@color/white"
+        android:contentDescription="System upgrade" />
+</LinearLayout>
+
