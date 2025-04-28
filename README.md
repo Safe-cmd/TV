@@ -42,31 +42,6 @@
 6.  **连接设备或启动模拟器:** 连接一台 Android TV 设备或启动一个 Android TV 模拟器。
 7.  **运行应用:** 点击 Android Studio 工具栏中的运行按钮（绿色三角形），选择目标设备，应用将构建并安装到设备上。
 
-## 项目结构# TV
-Activity_TV/
-├── app/
-│ ├── src/
-│ │ └── 主打 /
-│ │ ├── AndroidManifest.xml
-│ │ │ ├── java/
-│ │
-│ │ │ ├── MainActivity.kt # 主菜单 Activity
-│ │ │ ├── AboutSettingsActivity.kt # 关于本机设置
-│ │ │ ├── BluetoothSettingsActivity.kt # 蓝牙设置
-│ │ │ ├── 我
-│ │ │ ├── NetworkSettingsActivity.kt # 网络设置
-│ │ │ ├── 项目
-│ │ │ ├── SignalSourceSettingsActivity.kt # 信号源设置
-│ │ │ ├── SMA
-│ │ │ └── SoundSettingsActivity.kt # 声音设置
-│ │ └── res/
-│ │ ├── drawable/ # Drawable 资源 （背景， 选择器， 图标等）
-│ │ ├ l
-│ │ ├── values/ # 颜色， 字符串， 样式等
-│ │ └── ...其他资源目录 ...
-│ └── ...build.gradle 等 ...
-└── ...项目级别文件 ...
-
 ## 兼容性
 
 本项目使用标准 Android 视图和 `androidx` 库，理论上可以在支持相应 API 等级（具体取决于你的 `build.gradle` 中的 `minSdkVersion`）的 Android 设备上运行，但布局和交互主要为 Android TV (使用 D-pad 导航) 设计。
